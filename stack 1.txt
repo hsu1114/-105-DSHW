@@ -107,3 +107,16 @@ void list(int stack[], int top) {
         t--;
     }
 }
+<blockquote><p>
+	<strong><span style="color: #0000ff;">軟體小檔案</span></strong></p><p>
+
+			軟體名稱：lame3.99.5_toppy368.rar<br />
+			目前版本：3.99.5<br /> 軟體語言：中文（解壓縮檔） <br />
+			作業系統：Windows XP/Windows Vista/Windows 7<br />
+			適用範圍：foobar2000轉檔的輔助套件<br />
+			授權方式：免費軟體（無商業行為下可免費在家裡及公司中使用此檔案） <br /> 
+			最新版本查詢及下載：最新版本查詢</p><p>
+			
+本站版本 (32位元)：<a title="lame3.99.5_toppy368.rar -- Mediafire 下載點" href="http://www.mediafire.com/?7roapokkcsx1c9f" target="_blank">Mediafire 下載點</a>、<a title="lame3.99.5_toppy368.rar -- Box 加密下載點" href="https://www.box.com/s/0e38ebd9f879a2ebd1a6" target="_blank">BOX 下載點</a><br />
+本站版本 (64位元)：<a title="lame3.99.5-64_toppy368.rar -- Mediafire 下載點" href="http://www.mediafire.com/?4os29m1cokxl6lv" target="_blank">Mediafire 下載點</a>、<a title="lame3.99.5-64_toppy368.rar -- Box 加密下載點" href="https://www.box.com/s/e1e4bad0381fc020c5a1" target="_blank">BOX 下載點</a></p>
+</blockquote>
