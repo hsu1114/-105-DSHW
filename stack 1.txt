@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
-/*#define MAX 10
+#define MAX 10
 
-int creates(int[]);         // «Ø¥ß°ïÅ|
-int isEmpty(int);           // °ïÅ|¤wªÅ
-int stacktop(int[], int);   // ¶Ç¦^³»ºİ¤¸¯À
-int add(int[], int, int);   // ´¡¤J¤¸¯À
-int delete(int[], int);     // §R°£¤¸¯À
-void list(int[], int);      // Åã¥Ü©Ò¦³¤º®e
+int creates(int[]);         // å»ºç«‹å †ç–Š
+int isEmpty(int);           // å †ç–Šå·²ç©º
+int stacktop(int[], int);   // å‚³å›é ‚ç«¯å…ƒç´ 
+int add(int[], int, int);   // æ’å…¥å…ƒç´ 
+int delete(int[], int);     // åˆªé™¤å…ƒç´ 
+void list(int[], int);      // é¡¯ç¤ºæ‰€æœ‰å…§å®¹
 
 int main(void) {
 	setvbuf(stdout, NULL, _IONBF, 0);
@@ -20,11 +20,11 @@ int main(void) {
     top = creates(stack);
 
     while(1) {
-        printf("½Ğ¿é¤J¿ï¶µ(-1µ²§ô)¡G\n");
-        printf("(1)´¡¤J­È¦Ü°ïÅ|\n");
-        printf("(2)Åã¥Ü°ïÅ|³»ºİ\n");
-        printf("(3)§R°£³»ºİ­È\n");
-        printf("(4)Åã¥Ü©Ò¦³¤º®e\n");
+        printf("è«‹è¼¸å…¥é¸é …(-1çµæŸ)ï¼š\n");
+        printf("(1)æ’å…¥å€¼è‡³å †ç–Š\n");
+        printf("(2)é¡¯ç¤ºå †ç–Šé ‚ç«¯\n");
+        printf("(3)åˆªé™¤é ‚ç«¯å€¼\n");
+        printf("(4)é¡¯ç¤ºæ‰€æœ‰å…§å®¹\n");
         printf(">");
         scanf("%d", &select);
 
@@ -33,12 +33,12 @@ int main(void) {
 
         switch(select) {
             case 1:
-                printf("¿é¤J­È¡G");
+                printf("è¼¸å…¥å€¼ï¼š");
                 scanf("%d", &input);
                 top = add(stack, top, input);
                 break;
             case 2:
-                printf("³»ºİ­È¡G%d", stacktop(stack, top));
+                printf("é ‚ç«¯å€¼ï¼š%d", stacktop(stack, top));
                 break;
             case 3:
                 top = delete(stack, top);
@@ -47,7 +47,7 @@ int main(void) {
                 list(stack, top);
                 break;
             default:
-                printf("\n¿ï¶µ¿ù»~¡I");
+                printf("\né¸é …éŒ¯èª¤ï¼");
         }
     }
 
@@ -56,7 +56,7 @@ int main(void) {
     return 0;
 }
 
-// ¥H¤U¬°°ïÅ|¾Ş§@ªº¹ê§@
+// ä»¥ä¸‹ç‚ºå †ç–Šæ“ä½œçš„å¯¦ä½œ
 int creates(int stack[]) {
     int i;
 
@@ -78,7 +78,7 @@ int add(int stack[], int top, int item) {
     int t = top;
 
     if(t >= MAX-1) {
-        printf("\n°ïÅ|¤wº¡¡I");
+        printf("\nå †ç–Šå·²æ»¿ï¼");
         return t;
     }
 
@@ -91,7 +91,7 @@ int delete(int stack[], int top) {
     int t = top;
 
     if(isEmpty(t)) {
-        printf("\n°ïÅ|¤wªÅ¡I");
+        printf("\nå †ç–Šå·²ç©ºï¼");
         return t;
     }
 
@@ -101,10 +101,9 @@ int delete(int stack[], int top) {
 void list(int stack[], int top) {
     int t = top;
 
-    printf("\n°ïÅ|¤º®e¡G");
+    printf("\nå †ç–Šå…§å®¹ï¼š");
     while(!isEmpty(t)) {
         printf("%d ", stack[t]);
         t--;
     }
 }
-*/
